@@ -13,8 +13,8 @@ function showCategoryName(oneBrand) {
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
 
-  clone.querySelector("a").textContent = oneBrand.brandname;
+  // clone.querySelector("a").textContent = oneBrand.brandname;
 
-  const parent = document.querySelector("#letter_a ol");
-  parent.appendChild(clone);
+  const parent1 = document.querySelector("#letter_a ol");
+  parent1.appendChild(clone);
 }

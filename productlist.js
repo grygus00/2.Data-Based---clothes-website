@@ -3,7 +3,7 @@ function add_num() {
   location.reload();
 }
 let product_num = 100;
-const url = `https://kea-alt-del.dk/t7/api/products?limit=${product_num}&category=Footwear`;
+const url = `https://kea-alt-del.dk/t7/api/products?limit=${product_num}`;
 
 fetch(url)
   .then((response) => {
