@@ -1,9 +1,8 @@
-function add_num() {
-  product_num++;
-  location.reload();
-}
+const urlParams = new URLSearchParams(window.location.search);
+const productBrand = urlParams.get("brandname");
+
 let product_num = 100;
-const url = `https://kea-alt-del.dk/t7/api/products?limit=${product_num}`;
+const url = `https://kea-alt-del.dk/t7/api/products?brandname=${productBrand}&limit=${product_num}`;
 
 fetch(url)
   .then((response) => {
